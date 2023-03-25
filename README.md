@@ -1,0 +1,2 @@
+# linkscraper
+Link Scraper cli
