@@ -4,7 +4,7 @@ Link Scraper cli
 
 **Parameters:**
 
-| Parameter   | Dscription  | Required   |
+| Parameter   | Description  | Required   |
 |---|---|---|
 | -u, --url   | URL to scan  | Yes  |
 | -s, --section   | Display a section  | No  |
