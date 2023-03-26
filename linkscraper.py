@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import argparse
 from core.utils import *
 from core.modules import *
