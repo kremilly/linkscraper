@@ -1,5 +1,8 @@
+#!/usr/bin/python3
+
+from utils.utils import *
+
 import socket, requests
-from core.utils import *
 from urllib.parse import urlparse
 from http.client import HTTPConnection, HTTPSConnection
 
@@ -9,18 +12,17 @@ def http_code_list(c):
 
     for code in r:
         if code == str(c):
-            return r[code]["message"] + " (" + r[code]["spec_href"] + ")"
+            return "[italic yellow]" + r[code]["message"] + " [/italic yellow]-> [bold green]" + r[code]["spec_href"] + "[/bold green]"
 
 def http_code(url):
     try:
         r = requests.head(url)
         return r.status_code
-        # prints the int of the status code. Find more at httpstatusrappers.com :)
     except requests.ConnectionError:
         return False
 
 def get_ip(url):
-    url = strip_scheme(url)
+    url = stripScheme(url)
     return socket.gethostbyname(url)
 
 def get_hostname(url):
@@ -28,13 +30,14 @@ def get_hostname(url):
     return parsed.netloc
 
 def check_https_url(url):
-    url = strip_scheme(url)
+    url = stripScheme(url)
     HTTPS_URL = f'https://{url}'
 
     try:
         HTTPS_URL = urlparse(HTTPS_URL)
         connection = HTTPSConnection(HTTPS_URL.netloc, timeout=2)
         connection.request('HEAD', HTTPS_URL.path)
+        
         if connection.getresponse():
             return True
         else:
@@ -42,15 +45,15 @@ def check_https_url(url):
     except:
         return False
 
-
 def check_http_url(url):
-    url = strip_scheme(url)
+    url = stripScheme(url)
     HTTP_URL = f'http://{url}'
 
     try:
         HTTP_URL = urlparse(HTTP_URL)
         connection = HTTPConnection(HTTP_URL.netloc)
         connection.request('HEAD', HTTP_URL.path)
+        
         if connection.getresponse():
             return True
         else:

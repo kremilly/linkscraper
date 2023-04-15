@@ -128,5 +128,22 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-*.lock
-test.py
+# Remove all test files
+*test*
+
+# Ignore the path .vscode
+.vscode/
+
+# Ignore DB files
+*.db
+*.sql
+
+# Ignore HTML files
+*.htm
+*.html
+
+# Ignore .env file
+.env
+
+# Ignore the download path
+download/**
