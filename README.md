@@ -1,5 +1,11 @@
 # Linkscraper
 
+Clone this repository
+
+```shell
+git clone https://github.com/thesilvaemily/linkscraper.git
+```
+
 To install dependencies.
 
 ```python
