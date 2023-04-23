@@ -3,7 +3,7 @@
 Clone this repository.
 
 ```shell
-git clone https://github.com/thesilvaemily/linkscraper.git
+git clone https://github.com/kremilly/linkscraper.git
 ```
 
 To install dependencies.
