@@ -1,6 +1,6 @@
 # Linkscraper
 
-Clone this repository
+Clone this repository.
 
 ```shell
 git clone https://github.com/thesilvaemily/linkscraper.git
@@ -113,12 +113,12 @@ python linkscraper -u https://example.com -a get-css-files
 python linkscraper -u https://example.com -a get-images-files
 ```
 
-* *Get images files and filter files: (new)*
+* *Get images files and filter files (new):*
 
   ```shell
   python linkscraper -u https://example.com -a get-images-files -filter example.png
   ```
-* *Get images files and download files: (new)*
+* *Get images files and download files (new):*
 
   ```shell
   python linkscraper -u https://example.com -a get-images-files -d true
@@ -130,7 +130,7 @@ python linkscraper -u https://example.com -a get-images-files
 python linkscraper -u https://example.com -a get-links
 ```
 
-* *Get links and filter url: (new)*
+* *Get links and filter url (new):*
 
   ```shell
   python linkscraper -u https://example.com -a get-links -filter domain.com
@@ -140,7 +140,7 @@ python linkscraper -u https://example.com -a get-links
   ```shell
   python linkscraper -u https://example.com -a get-links -oel true
   ```
-* *Get links and show status code: (new)*
+* *Get links and show status code (new):*
 
   ```shell
   python linkscraper -u https://example.com -a get-links -ssc true
@@ -166,54 +166,54 @@ python linkscraper -u https://example.com -a get-emails
 python linkscraper -u https://example.com -a get-plugins -p wp-detect
 ```
 
-*whois: (new)*
+*whois (new):*
 
 ```shell
 python linkscraper -u https://example.com -a get-plugins -p whois
 ```
 
-*page-details: (new)* python
+*page-details (new):*
 
 ```shell
 linkscraper -u https://example.com -a get-plugins -p page-details
 ```
 
-*robots: (new)*
+*robots (new):*
 
 ```shell
 python linkscraper -u https://example.com -a get-plugins -p robots
 ```
 
-*virustotal: (new)*
+*virustotal (new):*
 
 ```shell
 python linkscraper -u https://example.com -a get-plugins -p virustotal -k YOUR_VIRUSTOTAL_KEY
 ```
 
-* *virustotal and get key in ENV variable: (new)*
+* *virustotal and get key in ENV variable (new):*
 
   ```shell
   python linkscraper -u https://example.com -a get-plugins -p virustotal -k env:VIRUSTOTAL_KEY
   ```
 
-*ip-location: (new)*
+*ip-location (new):*
 
 ```shell
 python linkscraper -u https://example.com -a get-plugins -p ip-location
 ```
 
-*screenshot: (new)*
+*screenshot (new):*
 
 ```shell
 python linkscraper -u https://example.com -a get-plugins -p screenshot -f screenshot.png -b chrome
 ```
 
-* *screenshot and upload to Imgur: (new)*
+* *screenshot and upload to Imgur (new):*
 
   ```shell
   python linkscraper -u https://example.com -a get-plugins -p screenshot -f screenshot.png -b chrome -up imgur -k YOUR_IMGUR_CLIENT_ID -t "Title of post here"
   ```
-* *screenshot and upload to Imgur and get key in ENV variable: (new)*
+* *screenshot and upload to Imgur and get key in ENV variable (new):*
 
   ```shell
   python linkscraper -u https://example.com -a get-plugins -p screenshot -f screenshot.png -b chrome -up imgur -k env:IMGUR_CLIENT_ID -t "Title of post here"
@@ -277,4 +277,4 @@ Plugins added
 
 ## License
 
-Code licensed under [MIT License](https://github.com/thesilvaemily/linkscraper/blob/main/LICENSE)
+Code licensed under [MIT License](https://github.com/kremilly/linkscraper/blob/main/LICENSE)
