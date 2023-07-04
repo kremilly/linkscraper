@@ -7,7 +7,7 @@ from urllib.parse import urlparse
 from http.client import HTTPConnection, HTTPSConnection
 
 def http_code_list(c):
-    r = requests.get('https://gist.githubusercontent.com/thesilvaemily/31aed3c28577f78bcaace2a377f8aa17/raw/4e765d040b739f0d7bc60ef8c2c8f37c17eae81c/http-status-code.json')
+    r = requests.get('https://gist.githubusercontent.com/kremilly/31aed3c28577f78bcaace2a377f8aa17/raw/4e765d040b739f0d7bc60ef8c2c8f37c17eae81c/http-status-code.json')
     r = r.json()
 
     for code in r:

@@ -226,7 +226,11 @@ python linkscraper -u https://example.com -a get-plugins -p screenshot -f screen
 
 ## Changelog
 
-> Current version: ``2.0.0``
+> Current version: ``2.0.1``
+
+Fixed
+
+* Fix the GitHub Gist URLs
 
 Added
 
